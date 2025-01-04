@@ -1,0 +1,13 @@
+{
+    "name": "electron-reading-tracker",
+    "version": "1.0.0",
+    "description": "Electron app to track reading for multiple courses",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "dependencies": {
+      "electron": "^26.2.0"
+    }
+  }
+  

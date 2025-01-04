@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reading Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Reading Tracker</h1>
+    
+    <!-- Add Course Section -->
+    <section class="section-block">
+      <h2>Add a New Course</h2>
+      <input type="text" id="newCourseName" placeholder="Course Name" />
+      <button id="addCourseBtn">Add Course</button>
+    </section>
+    
+    <!-- Add Textbook Section -->
+    <section class="section-block">
+      <h2>Add a New Textbook</h2>
+      <label for="courseSelectForTextbook">Course:</label>
+      <select id="courseSelectForTextbook">
+        <!-- Populated dynamically -->
+      </select>
+      <input type="text" id="newTextbookName" placeholder="Textbook Name" />
+      <button id="addTextbookBtn">Add Textbook</button>
+    </section>
+    
+    <!-- Select Course & Textbook Section -->
+    <section class="section-block">
+      <h2>Select Course & Textbook</h2>
+      <label for="courseSelect">Course:</label>
+      <select id="courseSelect"></select>
+      
+      <label for="textbookSelect">Textbook:</label>
+      <select id="textbookSelect"></select>
+    </section>
+
+    <!-- Add Original Text Section -->
+    <section class="section-block">
+      <h2>Add New Text to Read</h2>
+      <textarea id="originalTextInput" placeholder="Paste or type the text to read"></textarea>
+      <br />
+      <button id="addOriginalTextBtn">Add Original Text</button>
+    </section>
+    
+    <!-- Display Table of Original Text + Notes -->
+    <section class="section-block">
+      <h2>Text & Notes</h2>
+      <table id="textNotesTable">
+        <thead>
+          <tr>
+            <th>Original Text</th>
+            <th>Existing Notes</th>
+            <th>New Note</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="textNotesTableBody">
+          <!-- Populated dynamically -->
+        </tbody>
+      </table>
+    </section>
+    
+    <script src="renderer.js"></script>
+  </body>
+</html>
